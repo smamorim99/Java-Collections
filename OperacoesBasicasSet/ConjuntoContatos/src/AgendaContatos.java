@@ -44,7 +44,7 @@ public static void main(String[] args) {
     agendaContatos.adicionarContatoSet("Sabrina S", 1111156);
     agendaContatos.adicionarContatoSet("Sabrina Cavalcante", 55556456);
 
-    //agendaContatos.exibirContatos();
+    agendaContatos.exibirContatos();
 
     System.out.println(agendaContatos.pesquisarPorNome("Sabrina"));
 
