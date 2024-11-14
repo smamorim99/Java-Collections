@@ -53,6 +53,37 @@ public void marcarPendentes (String descricao){
         }
     }
 }
+public void limparTarefas (){
+    tarefasSet.clear();
+}
+public static void main(String[] args) {
+    ListaTarefa listaTarefa = new ListaTarefa();
+    
+    listaTarefa.exibirTarefas();
+
+    listaTarefa.adicionarTarefa("dobrar roupa");
+    listaTarefa.adicionarTarefa("Arrumar a casa");
+    listaTarefa.adicionarTarefa("Estudar");
+    listaTarefa.adicionarTarefa("limpar o chão");
+    listaTarefa.adicionarTarefa("Trabalhar");
+
+    listaTarefa.exibirTarefas();
+
+    /*listaTarefa.marcarconcluidas("Arrumar a Casa");
+    listaTarefa.marcarconcluidas("limpar o chão");
+
+    listaTarefa.marcarPendentes("dobrar roupa");
+    listaTarefa.marcarPendentes("Estudar");
+    listaTarefa.marcarPendentes("Trabalhar");/* */
+
+    
+
+    /*System.out.println("tarefas pendentes: " + listaTarefa.tarefasPendentes());
+    System.out.println("tarefas concluidas: "+ listaTarefa.tarefasConcluidas());
+    
+    listaTarefa.limparTarefas();
+    listaTarefa.exibirTarefas();/* */
+}
 }
 
 
