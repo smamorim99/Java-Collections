@@ -3,6 +3,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+import produtos.Produto;
+
 
 
 public class CadastroDeProdutos {
@@ -18,10 +20,10 @@ public Set <Produto> exibirProdutosPorNome(){
     Set <Produto> produtosPorNome = new TreeSet<>(produtosSet);
     return produtosPorNome;
 } 
-/*public Set<Produto> exibirProdutosPorPreco() { 
-    Set<Produto> produtosPorPreco = new TreeSet<>(new ComparatorPorPreco()); 
+public Set<Produto> exibirProdutosPorPreco() { 
+    Set<Produto> produtosPorPreco = new TreeSet<>(new com ()); 
         produtosPorPreco.addAll(produtosSet); 
-        return produtosPorPreco; */
+        return produtosPorPreco;
 }
 
 public static void main(String[] args) {
@@ -34,8 +36,8 @@ public static void main(String[] args) {
     cadastroDeProdutos.adicionarProduto(222335, "refrigerante", 10.00, 12);
     cadastroDeProdutos.adicionarProduto(88866, "fini", 6.00, 10);
     
-    cadastroDeProdutos.exibirProdutosPorNome();
+    System.out.println("Produtos por Nome:"); cadastroDeProdutos.exibirProdutosPorNome().forEach(System.out::println); 
+    System.out.println("Produtos por Preço:"); cadastroDeProdutos.exibirProdutosPorPreco().forEach(System.out::println);
 
-    //cadastroDeProdutos.exibirProdutosPorPreco();
-
+}
 }

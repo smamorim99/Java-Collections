@@ -1,3 +1,5 @@
+package produtos;
+
 import java.util.Comparator;
 import java.util.Objects;
 
@@ -28,9 +30,9 @@ public int getQuant() {
 @Override
 public boolean equals(Object obj) {
   if (this == obj)
-  return true;
+    return true;
   if (!(obj instanceof Produto produto))
-  return false;
+    return false;
   return getCodigo() == produto.getCodigo();
 }
 @Override
